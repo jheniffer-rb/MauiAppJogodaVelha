@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppJogoDaVelha.MainPage">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="Purple" Offset="0.3"/>//Cor do gradiente
+            <GradientStop Color="red" Offset="1.1"/>//Cor do gradiente
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="Transparent" />//Cor do botão
+            <Setter Property="CornerRadius" Value="15" />//Raio do botão
+            <Setter Property="TextColor" Value="White" />//Cor do texto
+            <Setter Property="FontSize" Value="80" />//Tamanho da fonte
+            <Setter Property="BorderWidth" Value="1" />//Largura da borda
+            <Setter Property="BorderColor" Value="White" />//Cor da borda
+        </Style>
+    </ContentPage.Resources>
+
+    <Grid ColumnDefinitions="*, *, *" RowDefinitions="*, *, *, *" VerticalOptions="FillAndExpand" ColumnSpacing="10" RowSpacing="10" Padding="10">//Definição das colunas e linhas
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="60" HorizontalTextAlignment="Center" Text="JOGO DA VELHA"/>//Texto do jogo
+
+        <Button x:Name="btn10" Grid.Row="1" Grid.Column="0" Text="" Clicked="Button_Clicked" />//Botão 1
+        <Button x:Name="btn11" Grid.Row="1" Grid.Column="1" Text="" Clicked="Button_Clicked" />//Botão 2
+        <Button x:Name="btn12" Grid.Row="1" Grid.Column="2" Text="" Clicked="Button_Clicked" />//Botão 3
+
+        <Button x:Name="btn20" Grid.Row="2" Grid.Column="0" Text="" Clicked="Button_Clicked" />//Botão 4
+        <Button x:Name="btn21" Grid.Row="2" Grid.Column="1" Text="" Clicked="Button_Clicked" />//Botão 5
+        <Button x:Name="btn22" Grid.Row="2" Grid.Column="2" Text="" Clicked="Button_Clicked" />//Botão 6
+
+        <Button x:Name="btn30" Grid.Row="3" Grid.Column="0" Text="" Clicked="Button_Clicked" />//Botão 7
+        <Button x:Name="btn31" Grid.Row="3" Grid.Column="1" Text="" Clicked="Button_Clicked" />//Botão 8
+        <Button x:Name="btn32" Grid.Row="3" Grid.Column="2" Text="" Clicked="Button_Clicked" />//Botão 9
+
+    </Grid>
+
+</ContentPage>
